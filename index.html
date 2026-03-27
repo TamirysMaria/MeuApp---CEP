@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Esta linha abaixo é essencial para o site ser responsivo (ajustar no celular) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar CEP - App Simples</title>
+  <!-- Link para o arquivo de estilo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- O container centraliza o conteúdo e dá o visual de "cartão" -->
+  <div class="container">
+    <h1>Buscar CEP</h1>
+
+    <!-- O 'id' é como o nome do campo para o JavaScript encontrá-lo -->
+    <input type="text" id="cep" placeholder="Digite o CEP (ex: 01001000)">
+    
+    <!-- Quando clicamos, a função 'buscarCEP' lá no JS é acionada -->
+    <button onclick="buscarCEP()">Buscar Endereço</button>
+
+    <!-- Esta div vazia é onde o JavaScript vai "escrever" o resultado depois -->
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Link para o arquivo de lógica -->
+  <script src="script.js"></script>
+</body>
+</html>
